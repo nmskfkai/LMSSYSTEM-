@@ -47,10 +47,8 @@ public class SecurityConfiguration {
                         "/member/find-password",
                         "/member/reset/password",
                         "/static/image/**",
-                        "/auth/kakao/callback/**",
-                        "/member/kakaoTerms"
-                        ).permitAll()
-
+                        "/auth/kakao/callback/**"
+                ).permitAll()
                 .requestMatchers("/admin/**")
                 .hasAuthority("ROLE_ADMIN")
                 .anyRequest().authenticated()); // 나머지 API에 대해서는 인증을 요구

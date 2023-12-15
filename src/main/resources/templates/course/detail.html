@@ -122,13 +122,19 @@
                     <tr>
                         <th>가격</th>
                         <td>
-                            <p th:text="${detail.price}"></p>
+                            <p class="text-decoration-line-through" th:text="${detail.price}"></p>
                         </td>
                     </tr>
                     <tr>
                         <th>할인가격</th>
                         <td>
                             <p th:text="${detail.salePrice}"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>설명</th>
+                        <td>
+                            <p th:text="${detail.summary}"></p>
                         </td>
                     </tr>
 
